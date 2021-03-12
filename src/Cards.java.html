@@ -1,138 +1,119 @@
-<html>
-<head>
-<title>Cards.java</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<style type="text/css">
-.s0 { color: #ed864a;}
-.s1 { color: #ebebeb;}
-.s2 { color: #ed864a; font-weight: bold;}
-.s3 { color: #54b33e;}
-.s4 { color: #33ccff; font-weight: bold;}
-</style>
-</head>
-<body bgcolor="#131314">
-<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
-<tr><td><center>
-<font face="Arial, Helvetica" color="#000000">
-Cards.java</font>
-</center></td></tr></table>
-<pre><span class="s0">import </span><span class="s1">java.util.Random</span><span class="s2">;</span>
-<span class="s0">public class </span><span class="s1">Cards {</span>
+[3:09 PM] Greg Krausz
+    
 
-    <span class="s0">public static </span><span class="s1">String Allcards[] = {</span><span class="s3">&quot;Card1&quot;</span><span class="s2">,</span><span class="s3">&quot;Card2&quot;</span><span class="s2">,</span><span class="s3">&quot;Card3&quot;</span><span class="s2">,</span><span class="s3">&quot;Card4&quot;</span><span class="s2">,</span><span class="s3">&quot;Card5&quot;</span><span class="s2">,</span><span class="s3">&quot;Card6&quot;</span><span class="s2">,</span><span class="s3">&quot;Card7&quot;</span><span class="s2">,</span><span class="s3">&quot;Card8&quot;</span><span class="s2">,</span><span class="s3">&quot;Card9&quot;</span><span class="s2">,</span><span class="s3">&quot;Card10&quot;</span><span class="s2">,</span>
-                             <span class="s3">&quot;Card11&quot;</span><span class="s2">,</span><span class="s3">&quot;Card12&quot;</span><span class="s2">,</span><span class="s3">&quot;Card13&quot;</span><span class="s2">,</span><span class="s3">&quot;Card14&quot;</span><span class="s2">,</span><span class="s3">&quot;Card15&quot;</span><span class="s2">,</span><span class="s3">&quot;Card16&quot;</span><span class="s2">,</span><span class="s3">&quot;Card17&quot;</span><span class="s2">,</span><span class="s3">&quot;Card18&quot;</span><span class="s2">,</span><span class="s3">&quot;Card19&quot;</span><span class="s2">,</span><span class="s3">&quot;Card20&quot;</span><span class="s1">}</span><span class="s2">;</span>
+import java.util.Random;
+public class Cards {​​​​​​​​
+    public static String Allcards[] = {​​​​​​​​"Card1","Card2","Card3","Card4","Card5","Card6","Card7","Card8","Card9","Card10",
+"Card11","Card12","Card13","Card14","Card15","Card16","Card17","Card18","Card19","Card20"}​​​​​​​​;
+public static void DrawCards(){​​​​​​​​
+        Random r = new Random();
+int low = 0;
+int high = 19;
+int Carddraw = r.nextInt(high - low) + low;
+for (int i = 0; i < 20; i++) {​​​​​​​​
+            if(Allcards[0].equals(Carddraw)){​​​​​​​​
+               System.out.print(Allcards[0] + "You spot a pile of cash in the Cbeast's dunk. +3000 ");
+get Player.Balance();
+set Player.Balance(balance + 3000);
+}​​​​​​​​
+             else if(Allcards[1].equals(Carddraw)){​​​​​​​​
+                System.out.print(Allcards[1] + "You spot a pile of cash in the Cbeast's dunk. +3000 ");
+get Player.Balance();
+set Player.Balance(balance + 3000);
+}​​​​​​​​
+            else if(Allcards[2].equals(Carddraw)){​​​​​​​​
+                System.out.print(Allcards[2] + "You spot a pile of cash in the Cbeast's dunk. +3000 ");
+get Player.Balance();
+set Player.Balance(balance + 3000);
+}​​​​​​​​
+            else if(Allcards[3].equals(Carddraw)){​​​​​​​​
+                System.out.print(Allcards[3] + "You spot a pile of cash in the Cbeast's dunk. +3000 ");
+get Player.Balance();
+set Player.Balance(balance + 3000);
+}​​​​​​​​
+            else if(Allcards[4].equals(Carddraw)){​​​​​​​​
+                System.out.print(Allcards[4] + "Joe mama comes to town spreading buck. +1000");
+get Player.Balance();
+set Player.Balance(balance + 1000);
+}​​​​​​​​
+            else if(Allcards[5].equals(Carddraw)){​​​​​​​​
+                System.out.print(Allcards[5] + "Joe mama comes to town spreading buck. +1000");
+get Player.Balance();
+set Player.Balance(balance + 1000);
+}​​​​​​​​
+            else if(Allcards[6].equals(Carddraw)){​​​​​​​​
+                System.out.print(Allcards[6] + "Joe mama comes to town spreading buck. +1000");
+get Player.Balance();
+set Player.Balance(balance + 1000);
+}​​​​​​​​
+            else if(Allcards[7].equals(Carddraw)){​​​​​​​​
+                System.out.print(Allcards[7] + "Joe mama comes to town spreading buck. +1000");
+get Player.Balance();
+set Player.Balance(balance + 1000);
+}​​​​​​​​
+            else if(Allcards[8].equals(Carddraw)){​​​​​​​​
+                System.out.print(Allcards[8] + "Joe mama comes to town spreading buck. +1000");
+get Player.Balance();
+set Player.Balance(balance + 1000);
+}​​​​​​​​
+            else if(Allcards[9].equals(Carddraw)){​​​​​​​​
+                System.out.print(Allcards[9] + "Joe mama comes to town spreading buck. +1000");
+get Player.Balance();
+set Player.Balance(balance + 1000);
+}​​​​​​​​
+            else if(Allcards[10].equals(Carddraw)){​​​​​​​​
+                System.out.print(Allcards[10] + "You sell some goods. +1500");
+get Player.Balance();
+set Player.Balance(balance + 1500);
+}​​​​​​​​
+            else if(Allcards[11].equals(Carddraw)){​​​​​​​​
+                System.out.print(Allcards[11] + "You sell some goods. +1500");
+get Player.Balance();
+set Player.Balance(balance + 1500);
+}​​​​​​​​
+            else if(Allcards[12].equals(Carddraw)){​​​​​​​​
+                System.out.print(Allcards[12] + "You sell some goods. +1500");
+get Player.Balance();
+set Player.Balance(balance + 1500);
+}​​​​​​​​
+            else if(Allcards[13].equals(Carddraw)){​​​​​​​​
+                System.out.print(Allcards[13] + "Critical debt has caught up with you, pay a grand to the mob. -1000");
+get Player.Balance();
+set Player.Balance(balance - 1000);
+}​​​​​​​​
+            else if(Allcards[14].equals(Carddraw)){​​​​​​​​
+                System.out.print(Allcards[14] + "Critical debt has caught up with you, pay a grand to the mob. -1000");
+get Player.Balance();
+set Player.Balance(balance - 1000);
+}​​​​​​​​
+            else if(Allcards[15].equals(Carddraw)){​​​​​​​​
+                System.out.print(Allcards[15] + "Critical debt has caught up with you, pay a grand to the mob. -1000");
+get Player.Balance();
+set Player.Balance(balance - 1000);
+}​​​​​​​​
+            else if(Allcards[16].equals(Carddraw)){​​​​​​​​
+                System.out.print(Allcards[16] + "Critical debt has caught up with you, pay a grand to the mob. -1000");
+get Player.Balance();
+set Player.Balance(balance - 1000);
+}​​​​​​​​
+            else if(Allcards[17].equals(Carddraw)){​​​​​​​​
+                System.out.print(Allcards[17] + "Gorilla Gorilla escapes its cage and smashes ur kneecaps in. -4000");
+get Player.Balance();
+set Player.Balance(balance - 4000);
+}​​​​​​​​
+            else if(Allcards[18].equals(Carddraw)){​​​​​​​​
+                System.out.print(Allcards[18] + "You bump into a child who drops their ice cream,you replace it. -500");
+get Player.Balance();
+set Player.Balance(balance - 500);
+}​​​​​​​​
+            else if(Allcards[19].equals(Carddraw)){​​​​​​​​
+                System.out.print(Allcards[19] + "You bump into a child who drops their ice cream,you replace it. -500");
+get Player.Balance();
+set Player.Balance(balance - 500);
+}​​​​​​​​
+        }​​​​​​​​
+    }​​​​​​​​
 
-    <span class="s0">public static void </span><span class="s1">DrawCards(){</span>
-        <span class="s1">Random r = </span><span class="s0">new </span><span class="s1">Random()</span><span class="s2">;</span>
-        <span class="s0">int </span><span class="s1">low = </span><span class="s4">0</span><span class="s2">;</span>
-        <span class="s0">int </span><span class="s1">high = </span><span class="s4">19</span><span class="s2">;</span>
-        <span class="s0">int </span><span class="s1">Carddraw = r.nextInt(high - low) + low</span><span class="s2">;</span>
-        <span class="s0">for </span><span class="s1">(</span><span class="s0">int </span><span class="s1">i = </span><span class="s4">0</span><span class="s2">; </span><span class="s1">i &lt; </span><span class="s4">20</span><span class="s2">; </span><span class="s1">i++) {</span>
-            <span class="s0">if</span><span class="s1">(Allcards[</span><span class="s4">0</span><span class="s1">].equals(Carddraw)){</span>
-               <span class="s1">System.out.print(Allcards[</span><span class="s4">0</span><span class="s1">] + </span><span class="s3">&quot;You spot a pile of cash in the Cbeast's dunk. +3000 &quot;</span><span class="s1">)</span><span class="s2">;</span>
-               <span class="s1">get Player.Balance()</span><span class="s2">;</span>
-               <span class="s1">set Player.Balance(balance + </span><span class="s4">3000</span><span class="s1">)</span><span class="s2">;</span>
-            <span class="s1">}</span>
-             <span class="s0">else if</span><span class="s1">(Allcards[</span><span class="s4">1</span><span class="s1">].equals(Carddraw)){</span>
-                <span class="s1">System.out.print(Allcards[</span><span class="s4">1</span><span class="s1">] + </span><span class="s3">&quot;You spot a pile of cash in the Cbeast's dunk. +3000 &quot;</span><span class="s1">)</span><span class="s2">;</span>
-                <span class="s1">get Player.Balance()</span><span class="s2">;</span>
-                <span class="s1">set Player.Balance(balance + </span><span class="s4">3000</span><span class="s1">)</span><span class="s2">;</span>
-            <span class="s1">}</span>
-            <span class="s0">else if</span><span class="s1">(Allcards[</span><span class="s4">2</span><span class="s1">].equals(Carddraw)){</span>
-                <span class="s1">System.out.print(Allcards[</span><span class="s4">2</span><span class="s1">] + </span><span class="s3">&quot;You spot a pile of cash in the Cbeast's dunk. +3000 &quot;</span><span class="s1">)</span><span class="s2">;</span>
-                <span class="s1">get Player.Balance()</span><span class="s2">;</span>
-                <span class="s1">set Player.Balance(balance + </span><span class="s4">3000</span><span class="s1">)</span><span class="s2">;</span>
-            <span class="s1">}</span>
-            <span class="s0">else if</span><span class="s1">(Allcards[</span><span class="s4">3</span><span class="s1">].equals(Carddraw)){</span>
-                <span class="s1">System.out.print(Allcards[</span><span class="s4">3</span><span class="s1">] + </span><span class="s3">&quot;You spot a pile of cash in the Cbeast's dunk. +3000 &quot;</span><span class="s1">)</span><span class="s2">;</span>
-                <span class="s1">get Player.Balance()</span><span class="s2">;</span>
-                <span class="s1">set Player.Balance(balance + </span><span class="s4">3000</span><span class="s1">)</span><span class="s2">;</span>
-            <span class="s1">}</span>
-            <span class="s0">else if</span><span class="s1">(Allcards[</span><span class="s4">4</span><span class="s1">].equals(Carddraw)){</span>
-                <span class="s1">System.out.print(Allcards[</span><span class="s4">4</span><span class="s1">] + </span><span class="s3">&quot;Joe mama comes to town spreading buck. +1000&quot;</span><span class="s1">)</span><span class="s2">;</span>
-                <span class="s1">get Player.Balance()</span><span class="s2">;</span>
-                <span class="s1">set Player.Balance(balance + </span><span class="s4">1000</span><span class="s1">)</span><span class="s2">;</span>
-            <span class="s1">}</span>
-            <span class="s0">else if</span><span class="s1">(Allcards[</span><span class="s4">5</span><span class="s1">].equals(Carddraw)){</span>
-                <span class="s1">System.out.print(Allcards[</span><span class="s4">5</span><span class="s1">] + </span><span class="s3">&quot;Joe mama comes to town spreading buck. +1000&quot;</span><span class="s1">)</span><span class="s2">;</span>
-                <span class="s1">get Player.Balance()</span><span class="s2">;</span>
-                <span class="s1">set Player.Balance(balance + </span><span class="s4">1000</span><span class="s1">)</span><span class="s2">;</span>
-            <span class="s1">}</span>
-            <span class="s0">else if</span><span class="s1">(Allcards[</span><span class="s4">6</span><span class="s1">].equals(Carddraw)){</span>
-                <span class="s1">System.out.print(Allcards[</span><span class="s4">6</span><span class="s1">] + </span><span class="s3">&quot;Joe mama comes to town spreading buck. +1000&quot;</span><span class="s1">)</span><span class="s2">;</span>
-                <span class="s1">get Player.Balance()</span><span class="s2">;</span>
-                <span class="s1">set Player.Balance(balance + </span><span class="s4">1000</span><span class="s1">)</span><span class="s2">;</span>
-            <span class="s1">}</span>
-            <span class="s0">else if</span><span class="s1">(Allcards[</span><span class="s4">7</span><span class="s1">].equals(Carddraw)){</span>
-                <span class="s1">System.out.print(Allcards[</span><span class="s4">7</span><span class="s1">] + </span><span class="s3">&quot;Joe mama comes to town spreading buck. +1000&quot;</span><span class="s1">)</span><span class="s2">;</span>
-                <span class="s1">get Player.Balance()</span><span class="s2">;</span>
-                <span class="s1">set Player.Balance(balance + </span><span class="s4">1000</span><span class="s1">)</span><span class="s2">;</span>
-            <span class="s1">}</span>
-            <span class="s0">else if</span><span class="s1">(Allcards[</span><span class="s4">8</span><span class="s1">].equals(Carddraw)){</span>
-                <span class="s1">System.out.print(Allcards[</span><span class="s4">8</span><span class="s1">] + </span><span class="s3">&quot;Joe mama comes to town spreading buck. +1000&quot;</span><span class="s1">)</span><span class="s2">;</span>
-                <span class="s1">get Player.Balance()</span><span class="s2">;</span>
-                <span class="s1">set Player.Balance(balance + </span><span class="s4">1000</span><span class="s1">)</span><span class="s2">;</span>
-            <span class="s1">}</span>
-            <span class="s0">else if</span><span class="s1">(Allcards[</span><span class="s4">9</span><span class="s1">].equals(Carddraw)){</span>
-                <span class="s1">System.out.print(Allcards[</span><span class="s4">9</span><span class="s1">] + </span><span class="s3">&quot;Joe mama comes to town spreading buck. +1000&quot;</span><span class="s1">)</span><span class="s2">;</span>
-                <span class="s1">get Player.Balance()</span><span class="s2">;</span>
-                <span class="s1">set Player.Balance(balance + </span><span class="s4">1000</span><span class="s1">)</span><span class="s2">;</span>
-            <span class="s1">}</span>
-            <span class="s0">else if</span><span class="s1">(Allcards[</span><span class="s4">10</span><span class="s1">].equals(Carddraw)){</span>
-                <span class="s1">System.out.print(Allcards[</span><span class="s4">10</span><span class="s1">] + </span><span class="s3">&quot;You sell some goods. +1500&quot;</span><span class="s1">)</span><span class="s2">;</span>
-                <span class="s1">get Player.Balance()</span><span class="s2">;</span>
-                <span class="s1">set Player.Balance(balance + </span><span class="s4">1500</span><span class="s1">)</span><span class="s2">;</span>
-            <span class="s1">}</span>
-            <span class="s0">else if</span><span class="s1">(Allcards[</span><span class="s4">11</span><span class="s1">].equals(Carddraw)){</span>
-                <span class="s1">System.out.print(Allcards[</span><span class="s4">11</span><span class="s1">] + </span><span class="s3">&quot;You sell some goods. +1500&quot;</span><span class="s1">)</span><span class="s2">;</span>
-                <span class="s1">get Player.Balance()</span><span class="s2">;</span>
-                <span class="s1">set Player.Balance(balance + </span><span class="s4">1500</span><span class="s1">)</span><span class="s2">;</span>
-            <span class="s1">}</span>
-            <span class="s0">else if</span><span class="s1">(Allcards[</span><span class="s4">12</span><span class="s1">].equals(Carddraw)){</span>
-                <span class="s1">System.out.print(Allcards[</span><span class="s4">12</span><span class="s1">] + </span><span class="s3">&quot;You sell some goods. +1500&quot;</span><span class="s1">)</span><span class="s2">;</span>
-                <span class="s1">get Player.Balance()</span><span class="s2">;</span>
-                <span class="s1">set Player.Balance(balance + </span><span class="s4">1500</span><span class="s1">)</span><span class="s2">;</span>
-            <span class="s1">}</span>
-            <span class="s0">else if</span><span class="s1">(Allcards[</span><span class="s4">13</span><span class="s1">].equals(Carddraw)){</span>
-                <span class="s1">System.out.print(Allcards[</span><span class="s4">13</span><span class="s1">] + </span><span class="s3">&quot;Critical debt has caught up with you, pay a grand to the mob. -1000&quot;</span><span class="s1">)</span><span class="s2">;</span>
-                <span class="s1">get Player.Balance()</span><span class="s2">;</span>
-                <span class="s1">set Player.Balance(balance - </span><span class="s4">1000</span><span class="s1">)</span><span class="s2">;</span>
-            <span class="s1">}</span>
-            <span class="s0">else if</span><span class="s1">(Allcards[</span><span class="s4">14</span><span class="s1">].equals(Carddraw)){</span>
-                <span class="s1">System.out.print(Allcards[</span><span class="s4">14</span><span class="s1">] + </span><span class="s3">&quot;Critical debt has caught up with you, pay a grand to the mob. -1000&quot;</span><span class="s1">)</span><span class="s2">;</span>
-                <span class="s1">get Player.Balance()</span><span class="s2">;</span>
-                <span class="s1">set Player.Balance(balance - </span><span class="s4">1000</span><span class="s1">)</span><span class="s2">;</span>
-            <span class="s1">}</span>
-            <span class="s0">else if</span><span class="s1">(Allcards[</span><span class="s4">15</span><span class="s1">].equals(Carddraw)){</span>
-                <span class="s1">System.out.print(Allcards[</span><span class="s4">15</span><span class="s1">] + </span><span class="s3">&quot;Critical debt has caught up with you, pay a grand to the mob. -1000&quot;</span><span class="s1">)</span><span class="s2">;</span>
-                <span class="s1">get Player.Balance()</span><span class="s2">;</span>
-                <span class="s1">set Player.Balance(balance - </span><span class="s4">1000</span><span class="s1">)</span><span class="s2">;</span>
-            <span class="s1">}</span>
-            <span class="s0">else if</span><span class="s1">(Allcards[</span><span class="s4">16</span><span class="s1">].equals(Carddraw)){</span>
-                <span class="s1">System.out.print(Allcards[</span><span class="s4">16</span><span class="s1">] + </span><span class="s3">&quot;Critical debt has caught up with you, pay a grand to the mob. -1000&quot;</span><span class="s1">)</span><span class="s2">;</span>
-                <span class="s1">get Player.Balance()</span><span class="s2">;</span>
-                <span class="s1">set Player.Balance(balance - </span><span class="s4">1000</span><span class="s1">)</span><span class="s2">;</span>
-            <span class="s1">}</span>
-            <span class="s0">else if</span><span class="s1">(Allcards[</span><span class="s4">17</span><span class="s1">].equals(Carddraw)){</span>
-                <span class="s1">System.out.print(Allcards[</span><span class="s4">17</span><span class="s1">] + </span><span class="s3">&quot;Gorilla Gorilla escapes its cage and smashes ur kneecaps in. -4000&quot;</span><span class="s1">)</span><span class="s2">;</span>
-                <span class="s1">get Player.Balance()</span><span class="s2">;</span>
-                <span class="s1">set Player.Balance(balance - </span><span class="s4">4000</span><span class="s1">)</span><span class="s2">;</span>
-            <span class="s1">}</span>
-            <span class="s0">else if</span><span class="s1">(Allcards[</span><span class="s4">18</span><span class="s1">].equals(Carddraw)){</span>
-                <span class="s1">System.out.print(Allcards[</span><span class="s4">18</span><span class="s1">] + </span><span class="s3">&quot;You bump into a child who drops their ice cream,you replace it. -500&quot;</span><span class="s1">)</span><span class="s2">;</span>
-                <span class="s1">get Player.Balance()</span><span class="s2">;</span>
-                <span class="s1">set Player.Balance(balance - </span><span class="s4">500</span><span class="s1">)</span><span class="s2">;</span>
-            <span class="s1">}</span>
-            <span class="s0">else if</span><span class="s1">(Allcards[</span><span class="s4">19</span><span class="s1">].equals(Carddraw)){</span>
-                <span class="s1">System.out.print(Allcards[</span><span class="s4">19</span><span class="s1">] + </span><span class="s3">&quot;You bump into a child who drops their ice cream,you replace it. -500&quot;</span><span class="s1">)</span><span class="s2">;</span>
-                <span class="s1">get Player.Balance()</span><span class="s2">;</span>
-                <span class="s1">set Player.Balance(balance - </span><span class="s4">500</span><span class="s1">)</span><span class="s2">;</span>
-            <span class="s1">}</span>
-        <span class="s1">}</span>
-
-    <span class="s1">}</span>
+}​​​​​​​​
 
 
-<span class="s1">}</span></pre>
-</body>
-</html>
